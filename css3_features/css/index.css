@@ -1,0 +1,125 @@
+div {
+  margin: 10px;
+  padding: 10px;
+  min-height: 50px;
+  min-width: 200px;
+}
+
+div > div {
+  border: 1px solid black;
+}
+
+#rounded div.normal {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+#rounded div.left {
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#box-shadow div {
+  -moz-box-shadow: 6px 6px 5px 0px #ccc;
+  -webkit-box-shadow: 6px 6px 5px 0px #ccc;
+  box-shadow: 6px 6px 5px 0px #ccc;
+}
+
+#gradients div.top {
+  background:-moz-linear-gradient(top, #fff, #adf); /* Firefox */
+  background:-webkit-linear-gradient(top, #fff, #adf); /* Safari, Chrome */
+  background:-o-linear-gradient(top, #fff, #adf); /* Opera */
+  background:-ms-linear-gradient(top, #fff, #adf); /* IE */
+  background:linear-gradient(top, #fff, #adf); /* W3C Standard */
+}
+
+#gradients div.left {
+  background:-moz-linear-gradient(left, #eee, #333); /* Firefox */
+  background:-webkit-linear-gradient(left, #eee, #333); /* Safari, Chrome */
+  background:-o-linear-gradient(left, #eee, #333); /* Opera */
+  background:-ms-linear-gradient(left, #eee, #333); /* IE */
+  background:linear-gradient(left, #eee, #333); /* W3C Standard */
+}
+
+#opacity {
+  background: url(http://lorempixel.com/1200/500/nature/4/);
+}
+
+#opacity div, #opacity h2, #opacity h3 {
+  border: 1px solid black;
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#opacity div.opac {
+  opacity: 0.4;
+}
+
+#opacity div.rgba {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#transformations div {
+  background-color: #ddd;
+  width: 200px;
+  display: inline-block;
+}
+
+#transformations div.rotate {
+  -moz-transform:rotate(-20deg);
+  -webkit-transform:rotate(-20deg);
+  -o-transform:rotate(-20deg);
+  transform:rotate(-20deg);
+}
+
+#transformations div.skew {
+  -moz-transform: skewX(35deg) skewY(10deg);
+  -webkit-transform: skewX(35deg) skewY(10deg);
+  -o-transform: skewX(35deg) skewY(10deg);
+  transform: skewX(35deg) skewY(10deg);
+}
+
+#transformations div.animate {
+  -webkit-animation: rotation 5s infinite linear;
+  -moz-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to   {-moz-transform: rotate(359deg);}
+}
+
+
+#fonts h2, #fonts p {
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

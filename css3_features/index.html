@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../shared/css/normalize.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+        <script src="../shared/js/modernizr.js"></script>
+    </head>
+    <body>
+      <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
+
+
+      <h1>CSS Features</h1>
+
+      <p>
+        Viele dieser Eigenschaften funktionieren erst ab IE9 (die Animationen z.B. sogar erst ab IE10).
+        Viele davon können nachgerüstet werden, z.B. über
+        <a href="http://css3pie.com" target="_blank">CSS3PIE</a>.
+      </p>
+
+      <p>
+        Ein guter Anlaufpunkt, welche Features man (schon) verwenden kann, ist
+        <a href="http://caniuse.com/" target="_blank">caniuse</a>.
+      </p>
+
+      <p>
+        Recht aktuelle Statistiken, welche Browser noch verwendet werden, findet man bei
+        <a href="http://gs.statcounter.com/#browser_version_partially_combined-DE-monthly-201212-201302-bar" target="_blank">StatCounter</a>.
+        Es ist auch möglich, die kompletten Daten als CSV zu erhalten.
+      </p>
+
+      <p>
+        So liegt z.B. der IE7 Ende 2012 unter 0,5%, IE8 liegt aktuell bei 7% 
+        (IE6 ist <strong>endlich</strong> bei 0,1%).
+      </p>
+
+      <div id="rounded">
+        <h2>Abgerundete Ecken</h2>
+
+        <div class="normal">abgerundete Ecken</div>
+
+        <div class="left">nur links</div>
+
+      </div>
+
+      <div id="box-shadow">
+        <h2>Schlagschatten</h2>
+
+        <div>mit Schatten</div>
+
+      </div>
+
+      <div id="gradients">
+        <h2>Farbverläufe</h2>
+
+        <p>Die vielen Möglichkeiten sieht man am Besten <a href="http://www.colorzilla.com/gradient-editor/" target="_blank">hier</a>.</p>
+
+        <div class="top">Ein Div mit Farbverlauf.</div>
+        <div class="left">Ein Div mit Farbverlauf links-rechts.</div>
+
+      </div>
+
+      <div id="opacity">
+        <h2>Transparenzen</h2>
+
+        <h3>via opacity</h3>
+
+        <div class="opac">
+          <p>Hier werden alle Kind-Elemente ebenfalls blasser.</p>
+        </div>
+
+        <h3>via rgba</h3>
+
+        <div class="rgba">
+          <p>Mit rgba wird nur das eigentliche Element transparent</p>
+        </div>
+
+      </div>
+
+      <div id="transformations">
+        <h2>CSS Transformationen</h2>
+
+        <div class="rotate">Rotiertes DIV</div>
+        <div class="skew">Gedrehtes DIV</div>
+        <div class="animate">Dauergedrehtes DIV</div>
+
+      </div>
+
+      <div id="fonts">
+        <h2>Webfonts</h2>
+
+        <p>Durch Webfonts kann man nun beinahe beliebige Schriftarten auf Webseiten verwenden.</p>
+
+        <p>Dank Google ist die Einbindung sehr einfach (siehe head-Tag), es geht aber natürlich auch manuell.</p>
+
+      </div>
+
+      <h2>Übungen</h2>
+
+      <ol>
+        <li>
+          Bauen Sie eine Header-Grafik ähnlich wie unter http://www.airport-nuernberg.de/ (ohne Animation).
+          Es soll ein Hintergrundbild mit abgerundeten Ecken und einen davor liegenden Textbereich geben,
+          der halb transparent ist. Die Schrift muss gut lesbar sein!
+        </li>
+        <li>
+          Bauen Sie den Hintergrund von http://www.airport-nuernberg.de/ grob nach (ohne Wolken).
+          Verwenden Sie einen CSS-Gradient, um auf dem Body-Tag
+          einen Verlauf von blau (oben) nach weiß (unten) zu erstellen.
+        </li>
+      </ol>
+
+    </body>
+</html>

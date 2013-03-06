@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+}
+
+.row {
+  margin-left: -10px;
+  *zoom: 1;
+}
+
+.row:before, .row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
+
+.colun, .columns {
+  float: left;
+  min-height: 1px;
+  margin-left: 10px;
+}
+
+.one {
+  width: 90px;
+}
+
+.two {
+  width: 190px;
+}
+
+.three {
+  width: 290px;
+}
+
+.four {
+  width: 390px;
+}
+
+/* und so weiter */
+
+.six {
+  width: 590px;
+}
+
+.eight {
+  width: 790px;
+}
+
+/* und so weiter */
+
+.twelve {
+  width: 1190px;
+}
+
+
+/* nur für Darstellung */
+
+.row {
+  margin-bottom: 10px;
+}
+
+.row > .columns {
+  background-color: #ccc;
+  min-height: 50px;
+}
+
+.row .row > .columns {
+  background-color: #ddd;
+  min-height: 100px;
+}
+
+div.special {
+  height: 300px;
+  background-color: #999;
+  padding: 10px;
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+}

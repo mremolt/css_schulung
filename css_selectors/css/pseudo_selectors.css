@@ -1,0 +1,53 @@
+* {
+  font-size: 18px;
+}
+
+div {
+  height: 150px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+div:hover {
+  background-color: red;
+}
+
+div:active {
+  background-color: blue;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li:first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: blue;
+}
+
+ul li:nth-child(2) {
+  color: yellow;
+}
+
+ul li:nth-child(2n) {
+  background-color: grey;
+}
+
+input:focus {
+  border: 2px solid blue;
+}
+
+.pre-text:before {
+  content: ">>";
+  padding-right: 5px;
+  color: red;
+}
+
+.post-text:after {
+  content: "!!!";
+  padding-left: 5px;
+  color: red;
+}

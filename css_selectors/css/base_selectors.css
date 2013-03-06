@@ -1,0 +1,47 @@
+p {
+  color: green;
+}
+
+#content p {
+  color: red;
+}
+
+#content > p {
+  border: 1px solid black;
+}
+
+html.lt-ie9 p {
+  color: blue;
+}
+
+html.lt-ie9 #content p {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.important {
+  border: 1px solid red;
+}
+
+a.very.important {
+  border: 3px solid red;
+}
+
+a[href="http://www.google.de/"] {
+  color: green;
+}
+
+a[href~="heise"] {
+  color: magenta;
+}
+
+a[href^="https"] {
+  color: red;
+}
+
+a[title] {
+  color: grey;
+}

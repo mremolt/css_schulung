@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../shared/css/normalize.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <script src="../shared/js/modernizr.js"></script>
+    </head>
+    <body>
+      <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
+
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+
+            <h1>Ein Layout ohne Tabellen</h1>
+
+            <p>
+              Weitere Infos zu dem clearfix Hack finden Sie
+              <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">hier</a>.<br>
+              Dieser wird übrigens auch so von Twitter Bootstrap verwendet.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="four columns">vier Spalten</div>
+          <div class="eight columns">acht Spalten</div>
+        </div>
+
+        <div class="row">
+          <div class="three columns">drei Spalten</div>
+          <div class="six columns">sechs Spalten</div>
+          <div class="three columns">drei Spalten</div>
+        </div>
+
+        <div class="row">
+          <div class="four columns">vier Spalten</div>
+
+          <div class="eight columns">
+            <div class="row">
+
+              <div class="four columns">
+                vier Spalten verschachtelt
+              </div>
+              <div class="four columns">
+                vier Spalten verschachtelt
+
+                <p>dieses mal mit viel Content</p>
+
+                <div class="special">ein hohes div</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <h2>Übungen</h2>
+
+      <ol>
+        <li>
+          Erstellen Sie auf Basis dieser Vorlage ein zweispaltiges Blog-Layout mit Kopf/Fuß-Bereich:
+<pre>
+  |-------------|
+  |     Kopf    |
+  |-------------|
+  |         |   |
+  | 9       | 3 |
+  |         |   |
+  |-------------|
+  |    Footer   |
+  |-------------|
+</pre>
+        </li>
+        <li>Testen Sie das Layout in allen relevanten Browsern.</li>
+      </ol>
+
+    </body>
+</html>

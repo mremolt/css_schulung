@@ -1,0 +1,27 @@
+body {
+  padding: 20px;
+}
+
+div {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.margin {
+  margin: 10px;
+}
+
+.border {
+  border: 10px solid black;
+}
+
+.box {
+  box-sizing: border-box;
+}
