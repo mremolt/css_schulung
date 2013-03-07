@@ -1,0 +1,24 @@
+body {
+  color: magenta;
+}
+
+#child2 {
+  color: blue;
+}
+
+#child3 {
+  color: green;
+  border: 1px solid black;
+}
+
+.important {
+  color: red;
+}
+
+#child4 .important {
+  color: darkred;
+}
+
+#child4 ul {
+  color: black;
+}
