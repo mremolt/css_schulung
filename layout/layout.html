@@ -26,12 +26,45 @@
             <h1>Ein Layout ohne Tabellen</h1>
 
             <p>
-              Weitere Infos zu dem clearfix Hack finden Sie
+              Sie sehen hier ein Layout, das bin hinunter zum IE7 zuverlässig funktioniert.
+              Es basiert auf einem zentrierten Container-DIV mit fester Breite (1200px).
+            </p>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="one column">&nbsp;</div>
+          <div class="ten columns">
+
+            <p>
+              Anstatt die Breite jeder Spalte manuell einzugeben, wird ein vorgegebenes Grid aus 12
+              Spalten verwendet, man muss alsso nur noch sagen, dass dieser DIV 8 Spalten breit sein soll.
+              Das erleichtert erheblich die Übersichtlichkeit und Wartbarkeit des CSS und verhindert
+              inkonsistente Breiten im Layout.
+
+              Dank <code>box-sizing: border-box;</code> zerstören auch paddings in den inneren Spalten das Layout nicht.
+            </p>
+
+            <p>
+              Die einzelnen Spalter jeder Zeile floaten zu einander (<code>float: left</code>)
+              und es wurde ein fester Abstand zwischen den Spalten eingebaut.
+              Es ist auch möglich, in eine Spalte wieder Spalten zu anzulegen,
+              also verschachtelte Layouts zu bauen.
+              <br>
+              Wenn man bedenkt, dass hierfür nicht einmal 100 Zeilen CSS notwendig sind, sollte
+              die Zeit der Tabellen-Layouts nun endgültig vorbei sein. Fertige Grid-Systeme wie
+              z.B. Twitter Bootstrap bieten natürlich noch mehr Komfort und Funktionen.
+            </p>
+
+            <p>
+              Weitere Infos zu dem eingebauten Clearfix Hack finden Sie
               <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">hier</a>.<br>
               Dieser wird übrigens auch so von Twitter Bootstrap verwendet.
             </p>
 
           </div>
+          <div class="one column">&nbsp;</div>
         </div>
 
         <div class="row">
@@ -51,8 +84,8 @@
           <div class="eight columns">
             <div class="row">
 
-              <div class="four columns">
-                vier Spalten verschachtelt
+              <div class="four columns" style="padding: 15px;">
+                vier Spalten verschachtelt mit padding in Spalte
               </div>
               <div class="four columns">
                 vier Spalten verschachtelt

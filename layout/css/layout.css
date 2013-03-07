@@ -2,9 +2,6 @@
   box-sizing: border-box;
 }
 
-div {
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -27,7 +24,7 @@ div {
   clear: both;
 }
 
-.colun, .columns {
+.column, .columns {
   float: left;
   min-height: 1px;
   margin-left: 10px;
@@ -49,7 +46,9 @@ div {
   width: 390px;
 }
 
-/* und so weiter */
+.five {
+  width: 490px;
+}
 
 .six {
   width: 590px;
@@ -61,12 +60,16 @@ div {
 
 /* und so weiter */
 
+.ten {
+  width: 990px;
+}
+
 .twelve {
   width: 1190px;
 }
 
 
-/* nur für Darstellung */
+/* nur für Darstellung, kein Teil des Layout-Grids */
 
 .row {
   margin-bottom: 10px;

@@ -23,6 +23,22 @@
       <h1>box-sizing: border-box</h1>
 
       <p>
+        Das normale Verhalten von Browsern ist, dass paddings (oder borders) das Element nach außen vergrößern.
+        Wenn man also mit festen Abmessungen arbeitet (width, height), muss man immer die paddings einrechnen:
+      </p>
+
+      <p>
+        width: 100px + padding: 10px<br>
+        Die Ergebnisbreite ist 120px: width + padding-left + padding-right.
+      </p>
+
+      <p>
+        Die CSS Eigenschaft box-sizing: border-box ändert das Verhalten, dass boder und padding nun nach
+        "innen" wachsen, also die Gesamtbreite des elements nicht beeinflussen.
+        Es ist nicht schwer vorzustellen, dass so das erstellen ines Layouts wesentlcih einfacher ist.
+      </p>
+
+      <p>
         Für IE &lt; 8 kann das Feature per
         <a href="https://github.com/Schepp/box-sizing-polyfill" target="_blank">polyfill</a>
         nachgerüstet werden.
